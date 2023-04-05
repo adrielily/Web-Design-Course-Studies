@@ -2,8 +2,78 @@
 <html>
     <header>
         <title>Contact Us</title>
+        <link rel="stylesheet" href="style.css">
     </header>
     <body>
-        <h1 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:rg(31, 31, 31)">Contact us</h1>
+        
+
+
+        <form>
+            <fieldset><legend>Contact Us</legend>
+            <table cellpadding="4">
+                <tr>
+                    <td><label name="first-name">First Name</label></td>
+                    <td><input type="text" name="first-name"></td>
+                </tr>
+
+                <tr>
+                    <td><label name="last-name">Last Name</label></td>
+                    <td><input type="text" name="last-name"></td>
+                </tr>
+
+                <tr>
+                    <td><label name="email">Email</label></td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+
+                <tr>
+                    <td><label name="phone">Phone</label></td>
+                    <td><input type="text" name="phone"></td>
+                </tr>
+
+                <tr>
+                    <td><label name="contact-format">How Can We Contact You?</label></td>
+                    <td>
+                        <input type="radio" name="contact-format" value="email"> Email 
+                        <input type="radio" name="contact-format" value="phone"> Phone
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label name="budget">Project Budget:</label></td>
+                    <td>
+                        <select>
+                            <option>Choose a budget</option>
+                            <option>$250-500</option>
+                            <option>$1000-2000</option>
+                            <option>$3000-5000</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label name="project-type"> Project Type</label></td>
+                    <td>
+                        <input type="checkbox" name="project-type" value="design"> Design
+                        <input type="checkbox" name="project-type" value="development"> Development
+                        <input type="checkbox" name="project-type" value="strategy"> Strategy
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label name="information">Additional Information</label></td>
+                    <td>
+                        <textarea name="information" rows="3" cols="25" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: #96AAB8"> Enter info here</textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" class="button" value="submit">
+                    </td>
+                </tr>
+            </table>
+            </fieldset>
+        </form>
     </body>
 </html>
